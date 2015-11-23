@@ -1,0 +1,28 @@
+{
+  "name": "co-ioc",
+  "version": "1.0.0",
+  "description": "IoC container using generators and co.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ioc",
+    "inversion",
+    "control",
+    "container",
+    "services"
+  ],
+  "author": "Christopher Turner <turner296@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "isval": "^0.1.3"
+  }
+}
