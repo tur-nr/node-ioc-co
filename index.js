@@ -64,7 +64,10 @@ function ioc() {
       }
 
       // build service
-      co.wrap(fn)({ get: get }).then(function(service) {
+      co.wrap(fn)({
+        get: get,
+        has: providers.has.bind(providers)
+      }).then(function(service) {
         stack.delete(id); // remove from get stack
         resolve(service);
       }, reject);
